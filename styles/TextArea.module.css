@@ -1,0 +1,9 @@
+.text_area .text {
+    color: inherit;
+    margin: 20px 0;
+}
+
+.text_area .btns {
+    display: flex;
+    gap: 30px;
+}

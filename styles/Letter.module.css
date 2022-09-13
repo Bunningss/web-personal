@@ -1,0 +1,6 @@
+.letter {
+    text-transform: uppercase;
+    font-family: "rainshow-condensed";
+    cursor: pointer;
+    white-space: pre-wrap;
+}

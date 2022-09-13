@@ -1,0 +1,67 @@
+.navbar {
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease;
+}
+
+.navbar.shrink {
+    height: 90px;
+    background-color: var(--color-primary);
+}
+
+.navbar .wrapper {
+    display: flex;
+}
+
+.navbar .wrapper .col {
+    width: 100%;
+}
+
+.navbar .wrapper .col.col_1 {
+    flex: 1;
+}
+
+.navbar .wrapper .col.col_2 {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar .wrapper .col.col_2 .list {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar .wrapper .col.col_2 .socials {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .wrapper .col.col_2 .socials .socialsList {
+    background-color: var(--color-primary);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .3s ease;
+}
+
+.navbar .wrapper .col.col_2 .socials .socialsList:hover {
+    background-color: var(--color-accent_secondary);
+}
+
+/* .navbar .wrapper .col.col_2 .socials .socialsList .anchor .icon {
+    height: 30px;
+    width: 30px;
+} */

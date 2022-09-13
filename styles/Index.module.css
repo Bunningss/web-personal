@@ -1,0 +1,16 @@
+.home {
+    height: 100vh;
+    padding-top: 120px;
+}
+
+.home.shrink {
+    height: calc(100vh - 120px);
+}
+
+.home .wrapper {
+    display: flex;
+}
+
+.home .wrapper .col {
+    width: 50%;
+}
