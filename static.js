@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import homeImg from './public/assets/Untitled_design__17_-removebg-preview.png';
 
 export const getheight = () => {
     const [ height, setHeight ] = useState(0);
@@ -49,7 +50,8 @@ export const homeData = {
 
 export const section = [
     {
-        images: [],
+        image: homeImg,
+        id: "home",
         data: {
             text: "TAYEF\nMAHMUD",
             about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
@@ -64,7 +66,8 @@ export const section = [
         }
     },
     {
-        images: [],
+        image: homeImg,
+        id: "skills",
         data: {
             text: "my\nskills",
             about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
@@ -75,7 +78,8 @@ export const section = [
         }
     },
     {
-        images: [],
+        image: homeImg,
+        id: "works",
         data: {
             text: "previous\nworks",
             about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
@@ -90,7 +94,8 @@ export const section = [
         }
     },
     {
-        images: [],
+        image: homeImg,
+        id: "contact",
         data: {
             text: "contact\nme",
             about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",

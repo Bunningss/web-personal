@@ -6,11 +6,11 @@
     display: flex;
 }
 
-.section .wrapper:nth-child(odd) {
-    display: flex;
-    /* flex-direction: row-reverse; */
-}
-
 .section .wrapper .col {
     flex: 1;
+}
+
+.section .wrapper .col.col_2 {
+    height: 100%;
+    width: 100%;
 }

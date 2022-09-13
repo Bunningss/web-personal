@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     transition: all .6s ease;
+    z-index: 10;
 }
 
 .navbar.shrink {
@@ -25,6 +26,19 @@
 
 .navbar .wrapper .col.col_1 {
     flex: 1;
+}
+
+.navbar .wrapper .col.col_1 .logo_wrapper {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+.navbar .wrapper .col.col_1 .logo_wrapper.shrunk {
+    height: 70px;
+    width: 70px;
 }
 
 .navbar .wrapper .col.col_2 {
