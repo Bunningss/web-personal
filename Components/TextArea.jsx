@@ -12,7 +12,9 @@ const TextArea = ({ data }) => {
         <p className={styles.text}>{data.about}</p>
         <div className={styles.btns}>
           <PrimaryButton info={data.primaryBtn}/>
-          <SecondaryButton info={data.secondaryBtn}/>
+          {
+            data.secondaryBtn && <SecondaryButton info={data.secondaryBtn}/>
+          }
         </div>
     </div>
   )

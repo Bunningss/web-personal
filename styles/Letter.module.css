@@ -3,4 +3,5 @@
     font-family: "rainshow-condensed";
     cursor: pointer;
     white-space: pre-wrap;
+    width: fit-content;
 }

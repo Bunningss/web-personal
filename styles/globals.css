@@ -55,31 +55,26 @@ ul {
   align-items: center;
 }
 
-.section:nth-child(odd) {
+.page:nth-child(odd) {
   background-image: var(--background-deep);
+  color: var(--color-secondary);
 }
 
-.section:nth-child(even) {
+.page:nth-child(even) {
   background-color: var(--background-light);
+  color: var(--color-primary);
 }
 
 .section-default {
   max-width: 1200px;
   width: 100%;
-  /* height: 100%; */
 }
 
-.section-default:nth-child(even) {
-  color: var(--color-primary);
+.section > :nth-child(even) > :nth-child(odd) {
+  flex-direction: row-reverse;
 }
-
-.section-default:nth-child(odd) {
-  color: var(--color-secondary);
-}
-
 
 /* Animation */
-
 @-webkit-keyframes jumpy {
   0% {
     -webkit-transform: scale3d(1, 1, 1);

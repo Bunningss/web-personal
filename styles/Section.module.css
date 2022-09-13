@@ -1,0 +1,16 @@
+.section:nth-child(1) {
+    height: 100vh;
+}
+
+.section .wrapper {
+    display: flex;
+}
+
+.section .wrapper:nth-child(odd) {
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.section .wrapper .col {
+    flex: 1;
+}
