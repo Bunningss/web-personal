@@ -2,9 +2,9 @@ import styles from '../styles/Navbar.module.css';
 import ListItem from './ListItem';
 import { getheight, navbar } from '../static';
 import Image from 'next/image';
-import facebook from '../assets/facebook-cre.png';
-import discord from '../assets/discord-cre.png';
-import insta from '../assets/instagram-cre.png';
+import facebook from '../public/assets/facebook-cre.png';
+import discord from '../public/assets/discord-cre.png';
+import insta from '../public/assets/instagram-cre.png';
 
 const Navbar = () => {
   const height = getheight();
