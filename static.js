@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import homeImg from './public/assets/Untitled_design__17_-removebg-preview.png';
+import homeImg from './public/assets/homeimg.png';
 
 export const getheight = () => {
     const [ height, setHeight ] = useState(0);

@@ -12,7 +12,7 @@ const Section = ({ data }) => {
             <TextArea data={data.data}/>
           </div>
           <div className={`${styles.col} ${styles.col_2}`}>
-            <Image src={data.image}></Image>
+            <Image loading='lazy' src={data.image}></Image>
           </div>
         </div>
       </div>

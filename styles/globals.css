@@ -68,6 +68,9 @@ ul {
 .section-default {
   max-width: 1200px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section > :nth-child(even) > :nth-child(odd) {

@@ -2,7 +2,7 @@ import styles from '../styles/Navbar.module.css';
 import ListItem from './ListItem';
 import { getheight, navbar } from '../static';
 import Image from 'next/image';
-import logo from '../public/assets/logo.png';
+import logo from '../public/assets/logo_cartoon_02.png';
 import facebook from '../public/assets/icons/facebook-cre.png';
 import upwork from '../public/assets/icons/upwork.png';
 import fiverr from '../public/assets/icons/fiverr.png';
