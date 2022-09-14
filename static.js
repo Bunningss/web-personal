@@ -17,39 +17,24 @@ export const getheight = () => {
 export const navbar = [
     {
         name: 'Home',
-        href: '#home'
+        href: '/'
     },
     {
-        name: 'Skills',
-        href: '#skills'
+        name: 'ABOUT',
+        href: 'about'
     },
     {
         name: 'works',
-        href: '#works'
+        href: 'works'
     },
     {
         name: 'contact',
-        href: '#contact'
+        href: 'contact'
     },
 ];
 
+// Section Data
 export const homeData = {
-    text: "TAYEF\nMAHMUD",
-    about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
-    primaryBtn: {
-        text: "Works",
-        href: "#works"
-    },
-    secondaryBtn: {
-        text: "Contact Me",
-        href: "#contact"
-    }
-}
-
-// Test
-
-export const section = [
-    {
         image: homeImg,
         id: "home",
         data: {
@@ -64,24 +49,14 @@ export const section = [
                 href: "#contact"
             }
         }
-    },
-    {
-        image: homeImg,
-        id: "skills",
+    }
+
+export const aboutData = {
+        image: '',
+        id: "home",
+        text: 'Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.',
         data: {
-            text: "my\nskills",
-            about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
-            primaryBtn: {
-                text: "Works",
-                href: "#works"
-            },
-        }
-    },
-    {
-        image: homeImg,
-        id: "works",
-        data: {
-            text: "previous\nworks",
+            text: "about\nme",
             about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
             primaryBtn: {
                 text: "Works",
@@ -92,17 +67,4 @@ export const section = [
                 href: "#contact"
             }
         }
-    },
-    {
-        image: homeImg,
-        id: "contact",
-        data: {
-            text: "contact\nme",
-            about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
-            primaryBtn: {
-                text: "Works",
-                href: "#works"
-            },
-        }
-    },
-];
+    }

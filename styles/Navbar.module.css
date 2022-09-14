@@ -44,7 +44,7 @@
 .navbar .wrapper .col.col_2 {
     flex: 3;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 50px;
 }

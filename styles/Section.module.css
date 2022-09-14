@@ -1,16 +1,13 @@
-.section:nth-child(1) {
-    height: 100vh;
+.section {
+    width: 100%;
 }
 
 .section .wrapper {
-    display: flex;
+    width: 100%;
 }
 
 .section .wrapper .col {
     flex: 1;
-}
-
-.section .wrapper .col.col_2 {
-    height: 100%;
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
