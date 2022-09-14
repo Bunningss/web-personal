@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className={height > 10 ? `${styles.navbar} ${styles.shrink}` : styles.navbar}>
       <div className={`${styles.wrapper} section-default`}>
         <div className={`${styles.col} ${styles.col_1}`}>
-          <Link href=''>
+          <Link href='/'>
             <div className={height > 10 ? `${styles.logo_wrapper} ${styles.shrunk}` : `${styles.logo_wrapper}`}>
               <Image src={logo} alt="Logo" layout='fill'/>
             </div>
