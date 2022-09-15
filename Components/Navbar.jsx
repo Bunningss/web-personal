@@ -7,8 +7,9 @@ import facebook from '../public/assets/icons/facebook-cre.png';
 import upwork from '../public/assets/icons/upwork.png';
 import fiverr from '../public/assets/icons/fiverr.png';
 import Link from 'next/link';
+import Hamburger from './Hamburger';
 
-const Navbar = () => {
+const Navbar = ({ active, setActive }) => {
   const height = getheight();
   return (
     <div className={height > 10 ? `${styles.navbar} ${styles.shrink}` : styles.navbar}>
@@ -45,6 +46,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <Hamburger active={active} setActive={setActive}/>
         </div>
       </div>
     </div>

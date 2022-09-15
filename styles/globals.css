@@ -78,6 +78,10 @@ ul {
   animation: reveal .6s linear;
 }
 
+.default-margin {
+  margin-top: 35vh;
+}
+
 .section-default {
   max-width: 1200px;
   width: 100%;

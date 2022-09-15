@@ -7,7 +7,7 @@
     height: 90vh;
     width: 100vw;
     background-color: lightpink;
-    border-radius: 0% 10% 10% 14% / 0% 10% 10% 16% ;
+    border-radius: 0% 0% 0% 32% / 10% 10% 6% 32% ;
     position: relative;
     overflow: hidden;
     transition: all .6s ease;

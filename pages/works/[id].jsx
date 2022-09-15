@@ -1,7 +1,7 @@
 import styles from '../../styles/Work.module.css';
 import Letters from '../../Components/Letters';
 import Image from 'next/image';
-import demo from '../../public/assets/Frame 32.png';
+import demo from '../../public/assets/kb.jpg';
 import { getheight } from '../../static';
 
 const Work = () => {

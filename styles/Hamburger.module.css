@@ -1,0 +1,29 @@
+.hamburger {
+    height: 20px;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger .line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-secondary_dark);
+    transition: all .3s ease;
+}
+
+.hamburger .line:nth-child(2) {
+    transform: translateX(5px);
+}
+
+.hamburger.active > .line:nth-child(2) {
+    transform: translateX(-5px);
+}
+
+@media screen and (max-width: 500px) {
+    .hamburger {
+        display: flex;
+    }
+}

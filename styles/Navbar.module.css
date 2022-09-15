@@ -75,7 +75,12 @@
     background-color: var(--color-accent_secondary);
 }
 
-/* .navbar .wrapper .col.col_2 .socials .socialsList .anchor .icon {
-    height: 30px;
-    width: 30px;
-} */
+@media screen and (max-width: 500px) {
+    .navbar .wrapper .col.col_2 .list {
+        display: none;
+    }
+
+    .navbar .wrapper .col.col_2 .socials .socialsList {
+        display: none;
+    }
+}
