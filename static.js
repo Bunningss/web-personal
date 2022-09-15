@@ -21,11 +21,11 @@ export const navbar = [
     },
     {
         name: 'works',
-        href: 'works'
+        href: '/works'
     },
     {
         name: 'contact',
-        href: 'contact'
+        href: '/contact'
     },
 ];
 
