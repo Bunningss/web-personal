@@ -1,0 +1,8 @@
+.works {
+    margin-top: 35vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}

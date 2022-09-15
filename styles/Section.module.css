@@ -4,6 +4,7 @@
 
 .section .wrapper {
     width: 100%;
+    display: flex;
 }
 
 .section .wrapper .col {

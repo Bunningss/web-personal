@@ -1,0 +1,26 @@
+.block {
+    margin-bottom: 12vh;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.block:hover {
+    transform: translateX(100px);
+}
+
+.block:hover .title, .block:hover .desc {
+    color: var(--color-secondary_dark);
+}
+
+.title, .desc {
+    transition: all .3s ease;
+}
+
+.title {
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.desc {
+    margin: 10px 0;
+}

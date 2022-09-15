@@ -20,10 +20,6 @@ export const navbar = [
         href: '/'
     },
     {
-        name: 'ABOUT',
-        href: 'about'
-    },
-    {
         name: 'works',
         href: 'works'
     },
@@ -42,11 +38,11 @@ export const homeData = {
             about: "Highly motivated web developer with 2 years of Front-end development experience using React JS and SCSS/SASS and 1 year of Back-end development experience. I prefer working with Node JS, Express, MongoDB and React stack for full stack development projects.",
             primaryBtn: {
                 text: "Works",
-                href: "#works"
+                href: "works"
             },
             secondaryBtn: {
                 text: "Contact Me",
-                href: "#contact"
+                href: "contact"
             }
         }
     }
