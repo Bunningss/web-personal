@@ -31,8 +31,12 @@
   text-rendering: optimizeLegibility;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  background:url('../public/assets/bg.svg') ;
+  background-image: var(--background-deep);
   color: var(--color-secondary);
 }
 

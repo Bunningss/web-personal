@@ -5,7 +5,8 @@
     height: 100vh;
     width: 68px;
     padding: 13px;
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
