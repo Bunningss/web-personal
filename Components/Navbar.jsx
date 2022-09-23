@@ -31,7 +31,7 @@ const Navbar = ({ active, setActive }) => {
       </div>
 
       <div className={styles.col}>
-        <ul className={styles.navList}>
+        <ul className={`${styles.navList} ${styles.opacity}`}>
           {
             external.map((item, indx) => (
               <ListItem item={item} key={indx}/>
