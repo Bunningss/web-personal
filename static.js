@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 import homeImg from './public/assets/homeimg.png';
+import home_ic from './public/assets/icons/home-cre.png';
+import mail_ic from './public/assets/icons/mail-cre.png';
+import proj_ic from './public/assets/icons/proj-cre.png';
+
+import upwork from './public/assets/icons/upwork.png';
+import fiverr from './public/assets/icons/fiverr.png';
 
 export const getheight = () => {
     const [ height, setHeight ] = useState(0);
@@ -13,19 +19,45 @@ export const getheight = () => {
     return height
 }
 
+// Mouse Move
+export default function useEvent(event, handler, passive = false) {
+    useEffect(() => {
+        // initiate the event handler
+        window.addEventListener(event, handler, passive);
+
+        // this will clean up the event every time the component is re-rendered
+        return () => window.removeEventListener(event, handler);
+    });
+}
+
+
 // Static Data
 export const navbar = [
     {
         name: 'Home',
-        href: '/'
+        href: '/',
+        icon: home_ic
     },
     {
         name: 'works',
-        href: '/works'
+        href: '/works',
+        icon: proj_ic
     },
     {
         name: 'contact',
-        href: '/contact'
+        href: '/contact',
+        icon: mail_ic
+    },
+];
+
+export const external = [
+    {
+        icon: upwork,
+        href: ''
+    },
+    {
+        icon: fiverr,
+        target: 'high'
     },
 ];
 

@@ -6,6 +6,7 @@
   --color-secondary_dark: #ffc1a6;
   --color-accent: #f75f00;
   --color-accent_secondary: #76cec1;
+  --color-dark: #1b2124;
 }
 
 @font-face {
@@ -31,7 +32,7 @@
 }
 
 body {
-  background-image: var(--background-deep);
+  background:url('../public/assets/bg.svg') ;
   color: var(--color-secondary);
 }
 
