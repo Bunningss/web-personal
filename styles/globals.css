@@ -94,6 +94,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .page {
+    padding: 0 0 0 70px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .section-default {
     padding: 10px;
