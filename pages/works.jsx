@@ -1,8 +1,9 @@
 import styles from '../styles/Works.module.css';
 import Head from 'next/head';
 import Block from '../Components/Block';
+import { publicCall } from '../reqMethod';
 
-const works = () => {
+const works = ({ projectList }) => {
   return (
     <div>
       <Head>
@@ -12,17 +13,24 @@ const works = () => {
       </Head>
       <div className={`page default ${styles.works}`}>
         <div className={`section-default ${styles.wrapper}`}>
-          <Block/>
-          <Block/>
-          <Block/>
-          <Block/>
-          <Block/>
-          <Block/>
-          <Block/>
+          {
+            projectList.map((project, indx) => (
+              <Block item={project} key={indx}/>
+            ))
+          }
         </div>
       </div>
     </div>
   )
+}
+
+export const getServerSideProps = async () => {
+  const res = await publicCall.get('/project');
+  return {
+    props: {
+      projectList: res.data
+    }
+  }
 }
 
 export default works

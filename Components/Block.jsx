@@ -1,14 +1,12 @@
 import Link from 'next/link';
 import styles from '../styles/Block.module.css';
 
-const Block = () => {
+const Block = ({ item }) => {
   return (
-    <Link href='/works/:id'>
+    <Link href={`/works/${item._id}`}>
         <div className={styles.block}>
-                <h2 className={`${styles.title} header`}>Pocobun</h2>
-                <p className={`${styles.desc} text-regular-small`}>
-                    Keep track of each special moment.
-                </p>
+                <h2 className={`${styles.title} header`}>{item.title}</h2>
+                <p className={`${styles.desc} text-regular-small`}>{item.tagline}</p>
         </div>
     </Link>
   )
