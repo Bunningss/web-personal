@@ -2,6 +2,7 @@ import styles from '../styles/Works.module.css';
 import Head from 'next/head';
 import Block from '../Components/Block';
 import { publicCall } from '../reqMethod';
+import axios from 'axios';
 
 const works = ({ projectList }) => {
   return (
