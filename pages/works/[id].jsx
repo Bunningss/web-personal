@@ -1,6 +1,7 @@
 import styles from '../../styles/Work.module.css';
 import Letters from '../../Components/Letters';
 import Image from 'next/image';
+import Head from 'next/head';
 import { getheight } from '../../static';
 import { publicCall } from '../../reqMethod';
 
