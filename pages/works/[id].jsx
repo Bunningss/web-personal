@@ -11,8 +11,11 @@ const Work = ({ project }) => {
       <div className={`section-default ${styles.wrapper}`}>
         <Letters text={project.title}/>
         <div className={h > 400 ? `${styles.cover_image} ${styles.slide}` : `${styles.cover_image}`}>
-          <Image src={project.image} alt={project.title} layout='fill' objectFit='cover'/>
+          <Image className={styles.image} src={project.image} alt={project.title} layout='fill'/>
         </div>
+        <a target="_blank" href={project.link}>
+          <p  className={`${styles.project_link} title`} >Visit Project</p>
+        </a>
         <p className={`text-regular-small ${styles.text}`}>{project.desc}</p>
       </div>
     </div>

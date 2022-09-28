@@ -6,15 +6,25 @@
     margin: 100px 0;
     height: 90vh;
     width: 100vw;
-    background-color: lightpink;
     border-radius: 0% 0% 0% 32% / 10% 10% 6% 32% ;
     position: relative;
     overflow: hidden;
     transition: all .6s ease;
 }
 
+.cover_image .image {
+    object-fit: cover;
+}
+
 .cover_image.slide {
     margin-left: 200px;
+}
+
+.project_link {
+    color: inherit;
+    margin: 20px 0;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .text {
@@ -30,5 +40,14 @@
 @media screen and (max-width: 500px) {
     .cover_image.slide {
         margin-left: 0px;
+    }
+
+    .cover_image {
+        height: 300px;
+        margin: 20px 0;
+    }
+
+    .cover_image .image {
+        object-fit: cover;
     }
 }

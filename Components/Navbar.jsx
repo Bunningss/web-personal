@@ -1,13 +1,9 @@
 import styles from '../styles/Navbar.module.css';
 import ListItem from './ListItem';
-import { external, getheight, navbar } from '../static';
+import { external, navbar } from '../static';
 import logo from '../public/assets/icons/logo (2).png';
 import Image from 'next/image';
-import facebook from '../public/assets/icons/facebook-cre.png';
-import upwork from '../public/assets/icons/upwork.png';
-import fiverr from '../public/assets/icons/fiverr.png';
 import Link from 'next/link';
-import Hamburger from './Hamburger';
 
 const Navbar = ({ active, setActive }) => {
   return (

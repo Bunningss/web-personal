@@ -10,3 +10,10 @@
 .listItem .listItem_name {
     font-size: 16px;
 }
+
+@media screen and (max-width: 399px) {
+    .listItem .listItem_image {
+        height: 20px;
+        width: 20px;
+    }
+}
