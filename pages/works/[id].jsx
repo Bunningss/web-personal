@@ -7,16 +7,23 @@ import { publicCall } from '../../reqMethod';
 const Work = ({ project }) => {
   let h = getheight();
   return (
-    <div className={`default page`}>
-      <div className={`section-default ${styles.wrapper}`}>
-        <Letters text={project.title}/>
-        <div className={h > 400 ? `${styles.cover_image} ${styles.slide}` : `${styles.cover_image}`}>
-          <Image className={styles.image} src={project.image} alt={project.title} layout='fill'/>
+    <div>
+      <Head>
+        <title>Tayef Mahmud - Project Details</title>
+        <meta name="description" content="Full Stack Website Developer." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className={`default page`}>
+        <div className={`section-default ${styles.wrapper}`}>
+          <Letters text={project.title}/>
+          <div className={h > 400 ? `${styles.cover_image} ${styles.slide}` : `${styles.cover_image}`}>
+            <Image className={styles.image} src={project.image} alt={project.title} layout='fill'/>
+          </div>
+          <a target="_blank" href={project.link} rel="noreferrer">
+            <p  className={`${styles.project_link} title`} >Visit Project</p>
+          </a>
+          <p className={`text-regular-small ${styles.text}`}>{project.desc}</p>
         </div>
-        <a target="_blank" href={project.link} rel="noreferrer">
-          <p  className={`${styles.project_link} title`} >Visit Project</p>
-        </a>
-        <p className={`text-regular-small ${styles.text}`}>{project.desc}</p>
       </div>
     </div>
   )
