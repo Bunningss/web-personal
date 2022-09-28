@@ -4,17 +4,25 @@ import styles from '../styles/ListItem.module.css';
 
 const ListItem = ({ item }) => {
   return (
-    <Link href={item.href ? item.href : ''} target={item.target && 'blank'}>
-        <li className={styles.listItem}>
-          {
-            item.icon ?
-            <div className={styles.listItem_image}>
-              <Image src={item.icon} alt=''/>
-            </div> :
-            <p className={styles.listItem_name}>{item.name}</p>
-          }
-        </li>
-    </Link>
+    <>
+      {
+        item.target ? 
+          <a href={item.target} target="_blank" rel='noreferrer'>
+              <li className={styles.listItem}>
+                  <div className={styles.listItem_image}>
+                    <Image src={item.icon} alt=''/>
+                  </div>
+              </li>
+          </a> :
+          <Link href={item.href ? item.href : ''}>
+              <li className={styles.listItem}>
+                  <div className={styles.listItem_image}>
+                    <Image src={item.icon} alt=''/>
+                  </div>
+              </li>
+          </Link>
+      }
+    </>
   )
 }
 

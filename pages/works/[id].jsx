@@ -13,7 +13,7 @@ const Work = ({ project }) => {
         <div className={h > 400 ? `${styles.cover_image} ${styles.slide}` : `${styles.cover_image}`}>
           <Image className={styles.image} src={project.image} alt={project.title} layout='fill'/>
         </div>
-        <a target="_blank" href={project.link}>
+        <a target="_blank" href={project.link} rel="noreferrer">
           <p  className={`${styles.project_link} title`} >Visit Project</p>
         </a>
         <p className={`text-regular-small ${styles.text}`}>{project.desc}</p>

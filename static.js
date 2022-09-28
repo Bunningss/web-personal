@@ -53,11 +53,11 @@ export const navbar = [
 export const external = [
     {
         icon: upwork,
-        href: ''
+        target: 'https://www.upwork.com/freelancers/~01c2e5116b1ee78ab7'
     },
     {
         icon: fiverr,
-        target: 'high'
+        target: 'https://www.fiverr.com/tayef47?up_rollout=true'
     },
 ];
 
