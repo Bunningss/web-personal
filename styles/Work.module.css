@@ -21,7 +21,7 @@
 }
 
 .project_link {
-    color: inherit;
+    color: var(--color-secondary);
     margin: 20px 0;
     text-decoration: underline;
     cursor: pointer;
